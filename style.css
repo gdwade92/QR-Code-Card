@@ -1,0 +1,114 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: inline-block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* End of Global Reset */
+
+  /* Global Declarations */
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/Outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 700;
+    font-display: fallback;
+    font-style: normal;
+}
+
+:root {
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-lg: hsl(212, 45%, 89%);
+    --clr-gb: hsl(220, 15%, 55%);
+    --clr-db: hsl(218, 44%, 22%);
+
+    --fs-body: 15px;
+
+    --fw-reg: 400;
+    --fw-bold:700;
+}
+ /* End of Global Declarations */
+
+
+/* General Styling */
+body {
+    font-family: 'Outfit', sans-serif;
+    font-weight: var(--fw-reg);
+    font-size: var(--fs-body);
+    color: var(--clr-gb);
+    background: var(--clr-lg);
+    line-height: 1.3;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 100dvh;
+}
+
+.card {
+    text-align: center;
+    max-width: 300px;
+    margin-inline: auto;
+    background: var(--clr-white);
+    padding: 1rem;
+    border-radius: 1.3rem;
+}
+
+.qr-image {
+  border-radius: 0.6rem;  
+  margin-bottom: 1rem;
+}
+/* End General Styling */
+
+
+
+ /* Font Styling */
+.title {
+    font-size: 1.3rem;
+    color: var(--clr-db);
+    font-weight: var(--fw-bold);
+}
+
+.title, .content {
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+/* End Font Styling */
+
+
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    text-wrap: pretty;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
