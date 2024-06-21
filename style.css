@@ -68,11 +68,12 @@ body {
     align-items: center;
     /* justify-content: center; */
     height: 100dvh;
+    margin-bottom: -1rem;
 }
 
 .card {
     text-align: center;
-    max-width: 300px;
+    max-width: 343px;
     margin-inline: auto;
     background: var(--clr-white);
     padding: 1rem;
@@ -89,9 +90,10 @@ body {
 
  /* Font Styling */
 .title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     color: var(--clr-db);
     font-weight: var(--fw-bold);
+    text-wrap: pretty;
 }
 
 .title, .content {
@@ -105,6 +107,7 @@ body {
 /* Attribution */
 .attribution {
     font-size: 11px;
+    margin-inline: auto;
     text-align: center;
     text-wrap: pretty;
   }
