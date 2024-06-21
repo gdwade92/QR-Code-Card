@@ -73,7 +73,7 @@ body {
 
 .card {
     text-align: center;
-    max-width: 320px;
+    max-width: 325px;
     margin-inline: auto;
     background: var(--clr-white);
     padding: 1rem;
@@ -91,7 +91,7 @@ body {
 
  /* Font Styling */
 .title {
-    font-size: 1.4rem;
+    font-size: 1.375rem;
     color: var(--clr-db);
     font-weight: var(--fw-bold);
     text-wrap: pretty;
